@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>YouTube Audio</title>
+  <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="top">
+      <div>
+        <p class="eyebrow">Local · yt-dlp</p>
+        <h1>YouTube Audio</h1>
+      </div>
+      <p class="note">Runs on this computer. Save only recordings you have the right to keep.</p>
+    </header>
+
+    <form id="lookup" class="lookup">
+      <label for="q">Title, artist, or YouTube link</label>
+      <div class="row">
+        <input id="q" name="q" type="search" autocomplete="off" placeholder="Paste a link or type a title" required>
+        <button type="submit" id="go">Look up</button>
+      </div>
+      <ul id="suggest" class="suggest" hidden></ul>
+    </form>
+
+    <p id="status" class="status" role="status"></p>
+    <section id="results" class="results" aria-live="polite"></section>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
